@@ -1,5 +1,7 @@
 import { roboto_mono } from "@/app/fonts";
 import ResumeHeader from "@/components/resume/ResumeHeader";
+import Objective from "@/sections/resume/Objective";
+import Experience from "@/sections/resume/Experience";
 import { Box, Stack } from "@mui/material";
 
 const DividerBar = () => {
@@ -21,6 +23,8 @@ export default function Resume() {
       <Stack direction="column" spacing={2}>
         <ResumeHeader />
         <DividerBar />
+        <Objective />
+        <Experience />
       </Stack>
     </Box>
   );

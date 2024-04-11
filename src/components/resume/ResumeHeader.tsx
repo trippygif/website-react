@@ -17,7 +17,7 @@ export default function ResumeHeader() {
   return (
     <Box sx={{ backgroundColor: "black" }}>
       <Stack direction="row" justifyContent="space-between" mx={2} py={2}>
-        <NameTypography>Bryan Yoelin</NameTypography>
+        <NameTypography>BRYAN YOELIN</NameTypography>
         <Stack direction="column">
           <Stack direction="row" spacing={4}>
             <BioTypography variant="h6">7327 N Delaware Ave</BioTypography>
