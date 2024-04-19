@@ -28,7 +28,7 @@ export const ExperienceItem = ({
   startDate: string;
   endDate: string;
   description: string;
-  techStack: string;
+  techStack?: string;
 }) => {
   return (
     <Box width="93%" alignSelf="center">
@@ -44,12 +44,14 @@ export const ExperienceItem = ({
         <Box sx={{ width: "100%" }}>
           <ExperienceTypography>{description}</ExperienceTypography>
         </Box>
-        <span>
-          <ExperienceTypography>
-            <strong>Tech Stack: </strong>
-            {techStack}
-          </ExperienceTypography>
-        </span>
+        {techStack && (
+          <span>
+            <ExperienceTypography>
+              <strong>Tech Stack: </strong>
+              {techStack}
+            </ExperienceTypography>
+          </span>
+        )}
       </Stack>
     </Box>
   );
